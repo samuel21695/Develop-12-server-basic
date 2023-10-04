@@ -36,10 +36,10 @@ http.createServer(function(request, response) {
   // 컨텐츠 타입은 html이라는 두번째 매개변수 객체 타입
   
   /**
-   * file sysyem 모듈을 사용하여 미리 정적으로 만들어진
+   * file system 모듈을 사용하여 미리 정적으로 만들어진
    * index.html 파일을 콜백함수로 읽어드린 것을 '응답 데이터'로 활용한 예시이다.
    */
-  fs.readFile("./public/index.html", function(err, data) {
+  fs.readFile("./index.html", function(err, data) {
     if (err) {
       console.error('파일을 읽지 못했습니다.');
     } else {
